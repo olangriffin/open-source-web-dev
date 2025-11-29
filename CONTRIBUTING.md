@@ -69,7 +69,7 @@ cd open-source-web-dev
 git checkout -b <your-branch-name>
 ```
 
-#🔧 Step 5: Make Changes
+# 🔧 Step 5: Make Changes
 
 Open the project in VS Code or your editor of choice
 
