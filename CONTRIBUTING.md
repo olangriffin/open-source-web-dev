@@ -51,7 +51,7 @@ A **fork** is your own copy of this repository on GitHub.
    
 ---
 
-## ⚙️ Step 3: Clone Your Fork
+# ⚙️ Step 3: Clone Your Fork
 
 Bring the repository to your local computer.
 
