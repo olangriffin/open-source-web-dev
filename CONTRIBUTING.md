@@ -88,7 +88,7 @@ git commit -m "Fix Issue #1: Corrected typo in intro.md"
 
 ```
 
-#☁️ Step 7: Push to GitHub
+# ☁️ Step 7: Push to GitHub
 
 Upload your branch to your fork:
 
