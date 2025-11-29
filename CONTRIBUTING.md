@@ -1,112 +1,213 @@
-# Contributing to open-source-web-dev
+# 🧑‍💻 Contributing to open-source-web-dev
 
-🎉 First off — thank you for taking the time to contribute! Open-source works because of amazing people like you. This document outlines the guidelines and best practices for contributing to this project.
-
----
-
-## 📌 How You Can Contribute
-
-There are many ways to help improve this project:
-
-- 🐛 Reporting bugs
-- 💡 Suggesting new features or enhancements
-- 🛠 Submitting code improvements
-- ✨ Improving documentation
-- 🔍 Reviewing pull requests
-- 🎨 Enhancing UI/UX accessibility
-
-No contribution is too small!
+Thank you for your interest in contributing!  
+This project is a community-driven collection of **web application templates**.  
+Contributions of all sizes are welcome — from documentation improvements to full new templates.
 
 ---
 
-## 🧭 Getting Started
+## 📋 Before You Start
 
-Before contributing, please:
-
-1. **Check open issues** to avoid duplication  
-2. **Discuss major changes** by opening an issue first  
-3. Make sure you agree with and follow our **Code of Conduct**
+- Make sure you have a GitHub account.
+- Be respectful and follow the `CODE_OF_CONDUCT.md`.
+- For anything more than a tiny fix, it’s best to **open or comment on an Issue** first.
 
 ---
 
-## 🛠 Development Setup
-
-# 📝 Step 1: Ask to Be Assigned
-
-Choose an issue and comment:
-
-Can you assign this to me?
-
-Wait for a maintainer to assign it.
-This avoids duplicate work
-
----
-
-# ✅ Step 2: Fork the Repository
+## ✅ Step 1: Fork the Repository
 
 A **fork** is your own copy of this repository on GitHub.
 
-1. Click the **Fork** button at the top right of this page
-2. Select **your GitHub account** as the destination
-   
+1. Click the **Fork** button in the top-right of this page.
+2. Select your GitHub account as the destination.
+
+You now have your own copy of `open-source-web-dev` under your account.
+
 ---
 
-# ⚙️ Step 3: Clone Your Fork
+## 🔁 Step 2: Clone Your Fork
 
-Bring the repository to your local computer.
+Open your terminal and run:
 
 ```bash
 # Replace YOUR-USERNAME with your GitHub username
 git clone https://github.com/YOUR-USERNAME/open-source-web-dev.git
 cd open-source-web-dev
-```
+````
 
 ---
 
-# 🌱 Step 4: Create a New Branch
+## 🌱 Step 3: Create a New Branch
+
+Always work on a **new branch**, not directly on `main`.
 
 ```bash
 git checkout -b <your-branch-name>
 ```
 
-# 🔧 Step 5: Make Changes
+Examples:
 
-Open the project in VS Code or your editor of choice
-
-Find the code related to the issue
-
-Make your improvements ✨
+```bash
+git checkout -b add-fastapi-homepage
+git checkout -b fix-typo-readme
+```
 
 ---
 
-# 📦 Step 6: Commit Your Changes
+## 📝 Step 4: Pick or Open an Issue
 
-Install dependencies if needed
+1. Go to the **Issues** tab.
+2. Look for labels like:
+
+   * `good first issue`
+   * `help wanted`
+3. Comment on the issue:
+
+> Can you assign this to me?
+
+Wait to be assigned before you start to avoid duplicate work.
+
+If you want to propose something new (e.g., a new template), open a **new Issue** and describe your idea.
+
+---
+
+## 🔧 Step 5: Make Your Changes
+
+Examples of things you can work on:
+
+* Add routes or endpoints to an existing template (e.g., `templates/FastAPI`).
+* Create a new template under `templates/`.
+* Improve or add documentation (`README.md`, template READMEs).
+* Add tests for an existing template.
+* Tidy up structure, comments, or naming.
+
+If a template includes Python dependencies:
+
 ```bash
-git add .
-git commit -m "Fix Issue #1: Corrected typo in intro.md"
-
+pip install -r requirements.txt
 ```
 
-# ☁️ Step 7: Push to GitHub
+(Do this inside the template directory if it has its own `requirements.txt`.)
 
-Upload your branch to your fork:
+---
+
+## 🧪 Step 6: Test Your Changes (If Applicable)
+
+If the template has tests, run them:
+
+```bash
+pytest
+```
+
+Some templates may not have tests yet — adding them is a great contribution!
+
+---
+
+## 💾 Step 7: Commit Your Changes
+
+Stage your changes:
+
+```bash
+git add .
+```
+
+Create a clear, descriptive commit message:
+
+```bash
+git commit -m "Add homepage route to FastAPI template"
+```
+
+Good commit messages:
+
+* Describe **what** you changed.
+* Mention the **template** or part of the project you touched.
+
+---
+
+## ☁️ Step 8: Push Your Branch
+
+Push your branch to your fork:
 
 ```bash
 git push origin <your-branch-name>
 ```
 
-# 🔀 Step 8: Open a Pull Request (PR)
+---
 
-1. Go to the original repository (not your fork)
+## 🔀 Step 9: Open a Pull Request (PR)
 
-2. Look for the “Compare & pull request” banner and click it
-If you don't see it:
-Go to Pull Requests → New pull request
+1. Go to your fork on GitHub.
 
-3. Add a descriptive title + what you fixed
+2. Click **Compare & pull request** (or go to the **Pull requests** tab and click **New pull request**).
 
-4. Reference the issue:
-Closes #1
+3. Make sure the base repository is:
 
-5. Click Create pull request 🎉
+   * `olangriffin/open-source-web-dev`
+   * base branch: `main`
+
+4. Add a clear title and description:
+
+   * What you changed.
+   * Which template(s) are affected.
+   * Reference the Issue number, e.g.:
+
+     ```text
+     Closes #3
+     ```
+
+5. Submit the Pull Request.
+
+A maintainer will review your PR, request changes if needed, and merge it when it’s ready.
+
+---
+
+## 🧩 Coding & Template Guidelines
+
+* Keep changes **focused** (one feature or fix per PR where possible).
+* Follow the existing folder and naming patterns:
+
+  * `templates/<TemplateName>/`
+  * Each template should include its own `README.md`.
+* Prefer small, incremental improvements over huge, hard-to-review PRs.
+* If you introduce new dependencies, document them in the relevant `requirements.txt` and README.
+
+---
+
+## 💡 Ideas for “Good First Issues”
+
+Not sure where to start? Here are examples of beginner-friendly tasks:
+
+* Add a simple homepage route to the FastAPI template.
+* Add or improve the README for a template.
+* Add a `/health` or `/status` endpoint.
+* Add basic tests for an existing route.
+* Improve comments or inline documentation.
+
+Check the Issues tab for current open tasks.
+
+---
+
+## 🤝 Community Expectations
+
+By contributing, you agree to:
+
+* Be respectful and constructive.
+* Follow the `CODE_OF_CONDUCT.md`.
+* Work transparently and respond to review feedback.
+
+We want this to be a safe and friendly place to learn and collaborate.
+
+---
+
+## 📄 License
+
+By submitting a contribution, you agree that your work will be licensed under the same license as the project: **MIT License** (see `LICENSE`).
+
+---
+
+Thank you for contributing to **open-source-web-dev**.
+Your time and effort help others learn and build better web applications. 🙌
+
+```
+::contentReference[oaicite:0]{index=0}
+```
