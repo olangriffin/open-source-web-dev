@@ -31,7 +31,7 @@ Before contributing, please:
 
 ## 🛠 Development Setup
 
-# 📝 Step 4: Ask to Be Assigned
+# 📝 Step 1: Ask to Be Assigned
 
 Choose an issue and comment:
 
