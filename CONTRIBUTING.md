@@ -88,7 +88,7 @@ git commit -m "Fix Issue #1: Corrected typo in intro.md"
 
 ```
 
-#☁️ Step 8: Push to GitHub
+#☁️ Step 7: Push to GitHub
 
 Upload your branch to your fork:
 
@@ -96,7 +96,7 @@ Upload your branch to your fork:
 git push origin <your-branch-name>
 ```
 
-#🔀 Step 9: Open a Pull Request (PR)
+# 🔀 Step 8: Open a Pull Request (PR)
 
 1. Go to the original repository (not your fork)
 
