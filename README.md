@@ -28,7 +28,7 @@ Perfect for prototyping, learning, or starting small to mid-size web projects �
 
 - We welcome all kinds of contributions — from documentation updates, small fixes, example apps, to major new features.
 
-# If you're new here:
+### If you're new here:
 
 - 🔎 Check the “Issues” tab for “good first issue” or “help wanted” labels
 
@@ -40,7 +40,7 @@ Perfect for prototyping, learning, or starting small to mid-size web projects �
 
 ## 📆 Project Roadmap & Ideas
 
-# Some directions to expand the project — feel free to contribute or discuss:
+### Some directions to expand the project — feel free to contribute or discuss:
 
 - ✅ Add one or more fully working example apps (e.g. todo-list, blog, simple API + frontend)
 
