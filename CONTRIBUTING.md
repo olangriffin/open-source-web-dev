@@ -207,7 +207,3 @@ By submitting a contribution, you agree that your work will be licensed under th
 
 Thank you for contributing to **open-source-web-dev**.
 Your time and effort help others learn and build better web applications. 🙌
-
-```
-::contentReference[oaicite:0]{index=0}
-```
