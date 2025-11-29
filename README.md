@@ -111,7 +111,3 @@ Let’s learn, build, and improve together. 🌱✨
 
 Welcome to the community ❤️🚀
 
-✔ Set up GitHub Actions (testing and style checks)
-
-Would you like me to **push the FastAPI template code next** so the repo has a working project for users to try?
-```
